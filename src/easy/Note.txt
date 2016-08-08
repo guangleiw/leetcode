@@ -16,3 +16,11 @@ Situations:
 	and will only be accessed from a single thread, using a StringBuilder is good enough.
 3>. If your string can change, and will be accessed from multiple threads, 
 	use a StringBuffer because StringBuffer is synchronous so you have thread-safety.
+
+-- Nim Game -- 
+1>. 1 =< n <=3 , 1st turn win;
+2>. n =4 , 1st  turn failed;
+3>. 5 =< n <= 7 , 1st turn can tansform to 2> situation by taking 1 ,2 ,3 stone. So , 1st turn win.
+4>. No matter how many stones the 1st turn takes, 2nd turn can transform to 3> situation . So , 1st turn failed.
+...
+n%4 !=0 , 1st turn win.
