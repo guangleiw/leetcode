@@ -62,7 +62,18 @@ public class Solution {
 		System.out.println("--- happy number---");
 		HappyNumSolution hns = new HappyNumSolution();
 		System.out.println(hns.isHappy(7));
-		;
+		
+		System.out.println("--- Remove duplicate elements ---");
+		RemoveDuplicateEleSolution rdes = new RemoveDuplicateEleSolution();
+		ListNode head2 = new ListNode(1);
+		head2.next = new ListNode(2);
+		head2.next.next = new ListNode(3);
+		head2.next.next.next= new ListNode(2);		
+		printLinkList(rdes.deleteDuplicates(head2));
+		
+		System.out.println("--- Climb Stairs ---");
+		ClimbStairsSolution css = new ClimbStairsSolution();
+		System.out.println(css.climbStairs2(45));
 
 	}
 
@@ -71,11 +82,15 @@ public class Solution {
 	}
 
 	public static void printLinkList(ListNode head) {
+		int length = 0;
 		while (head != null) {
-			System.out.println(head.val);
+			System.out.print(head.val+" ");
+			length++;
 			head = head.next;
 			// break;
 		}
+		
+		System.out.println("//Length of the linked list :"+ length);
 	}
 
 }
