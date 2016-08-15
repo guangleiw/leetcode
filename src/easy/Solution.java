@@ -66,14 +66,29 @@ public class Solution {
 		System.out.println("--- Remove duplicate elements ---");
 		RemoveDuplicateEleSolution rdes = new RemoveDuplicateEleSolution();
 		ListNode head2 = new ListNode(1);
-		head2.next = new ListNode(2);
-		head2.next.next = new ListNode(3);
-		head2.next.next.next= new ListNode(2);		
+		head2.next = new ListNode(3);
+		head2.next.next = new ListNode(5);
+		head2.next.next.next= new ListNode(10);		
 		printLinkList(rdes.deleteDuplicates(head2));
 		
 		System.out.println("--- Climb Stairs ---");
 		ClimbStairsSolution css = new ClimbStairsSolution();
 		System.out.println(css.climbStairs2(45));
+		
+		System.out.println("--- Best time to buy and sell stocks ---");
+		BuySellStockSolution bsss = new BuySellStockSolution();
+		int[] prices1 = new int[]{7, 1, 5, 3, 6, 4};
+		int[] prices2 = new int[]{7, 6, 4, 3, 1};
+		System.out.println(bsss.maxProfit(prices1));
+		System.out.println(bsss.maxProfit(prices2));
+		
+		System.out.println("--- Two Sorted Array merge ---");
+		MergeSortedArraysSolution msas = new MergeSortedArraysSolution();
+		ListNode head3 = new ListNode(-1);
+		head3.next = new ListNode(2);
+		head3.next.next = new ListNode(8);
+		head3.next.next.next= new ListNode(9);	
+		printLinkList(msas.mergeTwoLists(head2, head3));
 
 	}
 
