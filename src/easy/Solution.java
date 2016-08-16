@@ -89,6 +89,16 @@ public class Solution {
 		head3.next.next = new ListNode(8);
 		head3.next.next.next= new ListNode(9);	
 		printLinkList(msas.mergeTwoLists(head2, head3));
+		
+		System.out.println("--- Reverse Vowels in String ---");
+		ReverseVowelsSolution rvs = new ReverseVowelsSolution();
+		System.out.println(rvs.reverseVowels("leetcode"));
+		System.out.println(rvs.reverseVowels("aA"));
+		System.out.println(rvs.reverseVowels("test"));
+		
+		System.out.println("--- Swap Node Solution ---");
+		SwapNodesSolution sns = new SwapNodesSolution();
+		printLinkList(sns.swapPairs(head3));
 
 	}
 
