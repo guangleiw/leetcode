@@ -24,3 +24,11 @@ Situations:
 4>. No matter how many stones the 1st turn takes, 2nd turn can transform to 3> situation . So , 1st turn failed.
 ...
 n%4 !=0 , 1st turn win.
+
+-- House Rob --
+Using Dynamic Programming
+solition 1:
+State Transition function : sum[i] = Max(sum[i-2]+nums[i],sum[i-1]);
+sum[i] means the maximum amount of money when you rob the i th house.
+solution 2: 
+Divide the array into evens and odds.
