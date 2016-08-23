@@ -32,3 +32,7 @@ State Transition function : sum[i] = Max(sum[i-2]+nums[i],sum[i-1]);
 sum[i] means the maximum amount of money when you rob the i th house.
 solution 2: 
 Divide the array into evens and odds.
+
+-- Factorial Trailing Zeroes --
+Solution 1: Calculate the number of 5 between 1-N
+Solution 2: Calculate the number of power(5,k);

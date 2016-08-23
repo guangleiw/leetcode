@@ -1,5 +1,6 @@
 package easy;
 
+import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.LinkedList;
 import java.util.List;
@@ -92,20 +93,30 @@ public class Solution {
 		 * 
 		 * System.out.println("--- House Robber Solution ---"); HouseRobSolution
 		 * hrs = new HouseRobSolution(); System.out.println(hrs.rob(prices1));
+		 * 
+		 * 
+		 * System.out.println("--- BST Level Traversal Solution ---");
+		 * BSTLevelTraversalSolution bst_lts = new BSTLevelTraversalSolution();
+		 * TreeNode root = new TreeNode(1); root.left = new TreeNode(2);
+		 * root.right = new TreeNode(3); List<List<Integer>> list =
+		 * bst_lts.levelOrderBottom(root); //
+		 * System.out.println(list.get(0).get(0));
+		 * out(bst_lts.levelOrderBottom(root)); Queue<Integer> queue = new
+		 * LinkedList<Integer>(); queue.offer(null);
+		 * 
+		 * System.out.println("--- Plus One Solution ---"); PlusOneSolution pos
+		 * = new PlusOneSolution(); printArray(pos.plusOne(new int[]{9}));
+		 * 
+		 * System.out.println("--- Pascal Triangle Solution---"); PascalSolution
+		 * ps = new PascalSolution(); List<Integer> src = new ArrayList
+		 * <Integer>(); src.add(0, new Integer(1)); src.add(0, new Integer(2));
+		 * src.add(0, new Integer(1)); out(ps.getNextList(src));
 		 **/
 
-		System.out.println("--- BST Level Traversal Solution ---");
-		BSTLevelTraversalSolution bst_lts = new BSTLevelTraversalSolution();
-		TreeNode root = new TreeNode(1);
-		root.left = new TreeNode(2);
-		root.right = new TreeNode(3);
-		List<List<Integer>> list = bst_lts.levelOrderBottom(root);
-		// System.out.println(list.get(0).get(0));
-		out(bst_lts.levelOrderBottom(root));
-		
-		Queue<Integer> queue = new LinkedList<Integer>();
-		queue.offer(null);
-		System.out.println(queue.size());
+		System.out.println("--- MyQueue Solution ---");
+		MyQueueSolution mqs = new MyQueueSolution();
+		mqs.push(1);
+		System.out.println(mqs.peek());
 
 	}
 
