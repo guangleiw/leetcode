@@ -111,13 +111,16 @@ public class Solution {
 		 * ps = new PascalSolution(); List<Integer> src = new ArrayList
 		 * <Integer>(); src.add(0, new Integer(1)); src.add(0, new Integer(2));
 		 * src.add(0, new Integer(1)); out(ps.getNextList(src));
+		 * 
+		 * 
+		 * System.out.println("--- MyQueue Solution ---"); MyQueueSolution mqs =
+		 * new MyQueueSolution(); mqs.push(1); System.out.println(mqs.peek());
 		 **/
 
-		System.out.println("--- MyQueue Solution ---");
-		MyQueueSolution mqs = new MyQueueSolution();
-		mqs.push(1);
-		System.out.println(mqs.peek());
-
+		System.out.println("--- Pascal Triangle  ---");
+		PascalTriangle2Solution pts = new PascalTriangle2Solution();
+		List<Integer> ls = pts.getRow(8);
+		out(ls);
 	}
 
 	public static void printArray(int[] arr) {
@@ -137,9 +140,11 @@ public class Solution {
 	}
 
 	public static <T> void out(List<T> args) {
+		System.out.println("This is output of out :");
 		for (int i = 0; i < args.size(); i++) {
-			System.out.println(args.get(i));
+			System.out.print(args.get(i) + " ");
 		}
+		System.out.println("");
 	}
 
 }
