@@ -115,26 +115,34 @@ public class Solution {
 		 * 
 		 * System.out.println("--- MyQueue Solution ---"); MyQueueSolution mqs =
 		 * new MyQueueSolution(); mqs.push(1); System.out.println(mqs.peek());
-		
+		 * 
+		 * 
+		 * System.out.println("--- Pascal Triangle  ---");
+		 * PascalTriangle2Solution pts = new PascalTriangle2Solution(); List
+		 * <Integer> ls = pts.getRow(8); out(ls);
+		 * 
+		 * System.out.println("--- Bulls Cows Solution---"); BullsCowsSolutions
+		 * bcs = new BullsCowsSolutions();
+		 * System.out.println(bcs.getHint("1807", "7810"));
+		 * System.out.println(bcs.getHint("1123", "0111"));
+		 * System.out.println(bcs.getHint("00112233445566778899",
+		 * "16872590340158679432"));
+		 * 
+		 * 
+		 * System.out.println("--- Rectangle Area Solution ---");
+		 * RectangleAreaSolution ras = new RectangleAreaSolution();
+		 * System.out.println(ras.computeArea(-2, -2, 2, 2, -1, -1, 1, 1));
+		 * System.out.println(ras.computeArea(-2, -2, 2, 2, -2, 2, 2, 4));
+		 * System.out.println(ras.computeArea(-5, -3, 0, 0, -3, -3, 3, 3));
+		 **/
 
-		System.out.println("--- Pascal Triangle  ---");
-		PascalTriangle2Solution pts = new PascalTriangle2Solution();
-		List<Integer> ls = pts.getRow(8);
-		out(ls);
-		 
-		System.out.println("--- Bulls Cows Solution---");
-		BullsCowsSolutions bcs = new BullsCowsSolutions();
-		System.out.println(bcs.getHint("1807", "7810"));
-		System.out.println(bcs.getHint("1123", "0111"));		
-		System.out.println(bcs.getHint("00112233445566778899","16872590340158679432"));
-		**/
-		
-		System.out.println("--- Rectangle Area Solution ---");
-		RectangleAreaSolution ras = new RectangleAreaSolution();
-//		System.out.println(ras.computeArea(-2, -2, 2, 2, -1, -1, 1, 1));
-//		System.out.println(ras.computeArea(-2, -2, 2, 2, -2, 2, 2, 4));
-		System.out.println(ras.computeArea(-5, -3, 0, 0, -3, -3, 3, 3));
-		
+		System.out.println("--- Implement Stack using Queue ---");
+		MyStack ms = new MyStack();
+		ms.push(1);
+		ms.push(2);
+		ms.pop();
+		System.out.println(ms.top());
+
 	}
 
 	public static void printArray(int[] arr) {
