@@ -134,7 +134,7 @@ public class Solution {
 		 * System.out.println(ras.computeArea(-2, -2, 2, 2, -1, -1, 1, 1));
 		 * System.out.println(ras.computeArea(-2, -2, 2, 2, -2, 2, 2, 4));
 		 * System.out.println(ras.computeArea(-5, -3, 0, 0, -3, -3, 3, 3));
-		 **/
+		
 
 		System.out.println("--- Implement Stack using Queue ---");
 		MyStack ms = new MyStack();
@@ -142,6 +142,14 @@ public class Solution {
 		ms.push(2);
 		ms.pop();
 		System.out.println(ms.top());
+		 **/
+		System.out.println("--- RmNthNodeFromListSolution ---");
+		RmNthNodeFromListSolution rnfls = new RmNthNodeFromListSolution();
+		ListNode n1 = new ListNode(1);
+		n1.next = new ListNode(2);
+		printLinkList(rnfls.removeNthFromEnd(n1, 2));
+		
+		
 
 	}
 
