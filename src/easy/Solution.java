@@ -144,10 +144,16 @@ public class Solution {
 		 * 
 		 * 
 		 * System.out.println((new Date()).getTime());
-		 **/
+		
 		SingleNumberSolution sns  = new SingleNumberSolution();
 		int []arr = new int[]{1,2,3,2,1};
 		System.out.println(sns.singleNumber(arr));
+		 **/
+		
+		FindDiffSolution fds = new FindDiffSolution();
+		System.out.println(fds.findTheDifference("abcd", "abcde"));;
+		System.out.println(fds.findTheDifference("abcd", "eabcd"));;
+		System.out.println(fds.findTheDifference("abcd", "abecd"));;
 
 	}
 
