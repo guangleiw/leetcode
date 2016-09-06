@@ -1,13 +1,10 @@
 package easy;
 
-import java.util.ArrayList;
 import java.util.Arrays;
-import java.util.LinkedList;
+import java.util.Date;
 import java.util.List;
-import java.util.Queue;
 
 import utils.ListNode;
-import utils.TreeNode;
 
 public class Solution {
 
@@ -134,22 +131,23 @@ public class Solution {
 		 * System.out.println(ras.computeArea(-2, -2, 2, 2, -1, -1, 1, 1));
 		 * System.out.println(ras.computeArea(-2, -2, 2, 2, -2, 2, 2, 4));
 		 * System.out.println(ras.computeArea(-5, -3, 0, 0, -3, -3, 3, 3));
-		
-
-		System.out.println("--- Implement Stack using Queue ---");
-		MyStack ms = new MyStack();
-		ms.push(1);
-		ms.push(2);
-		ms.pop();
-		System.out.println(ms.top());
+		 * 
+		 * 
+		 * System.out.println("--- Implement Stack using Queue ---"); MyStack ms
+		 * = new MyStack(); ms.push(1); ms.push(2); ms.pop();
+		 * System.out.println(ms.top());
+		 * 
+		 * System.out.println("--- RmNthNodeFromListSolution ---");
+		 * RmNthNodeFromListSolution rnfls = new RmNthNodeFromListSolution();
+		 * ListNode n1 = new ListNode(1); n1.next = new ListNode(2);
+		 * printLinkList(rnfls.removeNthFromEnd(n1, 2));
+		 * 
+		 * 
+		 * System.out.println((new Date()).getTime());
 		 **/
-		System.out.println("--- RmNthNodeFromListSolution ---");
-		RmNthNodeFromListSolution rnfls = new RmNthNodeFromListSolution();
-		ListNode n1 = new ListNode(1);
-		n1.next = new ListNode(2);
-		printLinkList(rnfls.removeNthFromEnd(n1, 2));
-		
-		
+		SingleNumberSolution sns  = new SingleNumberSolution();
+		int []arr = new int[]{1,2,3,2,1};
+		System.out.println(sns.singleNumber(arr));
 
 	}
 
