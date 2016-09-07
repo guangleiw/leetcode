@@ -170,6 +170,7 @@ public class Solution {
 		int[] b = new int[]{1};
 		
 		msas.merge(a, 0, b, 1);
+		printArray(a);
 
 	}
 
