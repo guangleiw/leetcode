@@ -3,10 +3,13 @@ package easy;
 public class MergeSortedArraySolution {
 	public void merge(int[] nums1, int m, int[] nums2, int n) {
 		if (m == 0){
-//			nums1 = nums2;
 			System.arraycopy(nums2, 0, nums1, 0, n);
 			return;
 		}
+		if(n ==0){
+			return;
+		}
+		
 		int idx_n = n - 1;
 		int idx_m = m - 1;
 		int fill_idx = m+n - 1;
