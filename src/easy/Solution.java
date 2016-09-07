@@ -153,13 +153,18 @@ public class Solution {
 		 * System.out.println(fds.findTheDifference("abcd", "abcde"));;
 		 * System.out.println(fds.findTheDifference("abcd", "eabcd"));;
 		 * System.out.println(fds.findTheDifference("abcd", "abecd"));;
+		 * 
+		 * 
+		 * WordPatternSolution wps = new WordPatternSolution();
+		 * System.out.println(wps.wordPattern("abba", "dog cat cat dog"));
+		 * System.out.println(wps.wordPattern("ab", "dog cat"));
+		 * System.out.println(wps.wordPattern("aba", "dog cat cat"));
 		 **/
 		
-		WordPatternSolution wps = new WordPatternSolution();
-		System.out.println(wps.wordPattern("abba", "dog cat cat dog"));
-		System.out.println(wps.wordPattern("ab", "dog cat"));
-		System.out.println(wps.wordPattern("aba", "dog cat cat"));
-		
+		CountSaySolution css = new CountSaySolution();
+//		System.out.println(css.countAndSay(2));
+		System.out.println(css.countAndSay(5));
+
 	}
 
 	public static void printArray(int[] arr) {
