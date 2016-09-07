@@ -10,10 +10,8 @@ public class CountSaySolution {
 		StringBuffer newStrBuf = new StringBuffer("");
 		for (int c = 1; c < n; c++) {
 			int count = 1;
-			char value = '1';
 			newStrBuf = new StringBuffer("");
 			for (int i = 0, j = 1; j < preStr.length(); j++) {
-				value = preStr.charAt(i);
 				if (preStr.charAt(i) == preStr.charAt(j)) {
 					count++;
 				} else {
