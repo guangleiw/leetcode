@@ -159,19 +159,19 @@ public class Solution {
 		 * System.out.println(wps.wordPattern("abba", "dog cat cat dog"));
 		 * System.out.println(wps.wordPattern("ab", "dog cat"));
 		 * System.out.println(wps.wordPattern("aba", "dog cat cat"));
-		 
+		 * 
+		 * 
+		 * CountSaySolution css = new CountSaySolution(); //
+		 * System.out.println(css.countAndSay(2));
+		 * System.out.println(css.countAndSay(5));
+		 * 
+		 * MergeSortedArraySolution msas = new MergeSortedArraySolution(); int[]
+		 * a = new int[]{0}; int[] b = new int[]{1}; a = new int[]{1}; b = new
+		 * int[]{}; msas.merge(a, 1, b, 0); printArray(a);
+		 **/
 		
-		CountSaySolution css = new CountSaySolution();
-//		System.out.println(css.countAndSay(2));
-		System.out.println(css.countAndSay(5));
-		**/
-		MergeSortedArraySolution msas = new MergeSortedArraySolution();
-		int[] a = new int[]{0};
-		int[] b = new int[]{1};
-		a = new int[]{1};
-		b = new int[]{};		
-		msas.merge(a, 1, b, 0);
-		printArray(a);
+		ValidParenthessSolution vps = new ValidParenthessSolution();
+		System.out.println(vps.isValid("([)]"));
 
 	}
 
