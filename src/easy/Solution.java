@@ -172,10 +172,15 @@ public class Solution {
 		 * 
 		 * ValidParenthessSolution vps = new ValidParenthessSolution();
 		 * System.out.println(vps.isValid("([)]"));
+		 * 
+		 * 
+		 * ContainsDuplicateSolution cds = new ContainsDuplicateSolution();
+		 * System.out.println(cds.containsNearbyDuplicate(new int[]{1,2}, 2));
 		 **/
-		
-		ContainsDuplicateSolution cds = new ContainsDuplicateSolution();
-		System.out.println(cds.containsNearbyDuplicate(new int[]{1,2}, 2));
+		LengthLastWordSolution llws = new LengthLastWordSolution();
+		System.out.println(llws.lengthOfLastWord(""));
+		System.out.println(llws.lengthOfLastWord(" "));
+		System.out.println(llws.lengthOfLastWord("string "));
 	}
 
 	public static void printArray(int[] arr) {
