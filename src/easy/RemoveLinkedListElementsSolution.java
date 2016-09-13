@@ -16,6 +16,11 @@ public class RemoveLinkedListElementsSolution {
 
 		ListNode f = head.next;
 		ListNode s = head;
+		if (s.val == val) {
+			s = f;
+			f = f.next;
+		}
+
 		while (f != null) {
 			if (f.val == val) {
 				f = f.next;
