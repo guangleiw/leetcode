@@ -2,6 +2,7 @@ package easy;
 
 import java.util.Arrays;
 import java.util.Date;
+import java.util.LinkedList;
 import java.util.List;
 
 import utils.ListNode;
@@ -176,11 +177,19 @@ public class Solution {
 		 * 
 		 * ContainsDuplicateSolution cds = new ContainsDuplicateSolution();
 		 * System.out.println(cds.containsNearbyDuplicate(new int[]{1,2}, 2));
+		 * 
+		 * LengthLastWordSolution llws = new LengthLastWordSolution();
+		 * System.out.println(llws.lengthOfLastWord(""));
+		 * System.out.println(llws.lengthOfLastWord(" "));
+		 * System.out.println(llws.lengthOfLastWord("string "));
 		 **/
-		LengthLastWordSolution llws = new LengthLastWordSolution();
-		System.out.println(llws.lengthOfLastWord(""));
-		System.out.println(llws.lengthOfLastWord(" "));
-		System.out.println(llws.lengthOfLastWord("string "));
+		PalindromLinkedListSolution pls = new PalindromLinkedListSolution();
+		ListNode n1 = new ListNode(1);
+		n1.next = new ListNode(2);
+		n1.next.next = new ListNode(2);
+		n1.next.next.next = new ListNode(1);
+		System.out.println(pls.isPalindrome(n1));
+
 	}
 
 	public static void printArray(int[] arr) {
