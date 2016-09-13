@@ -195,7 +195,7 @@ public class Solution {
 		 **/
 
 		RemoveLinkedListElementsSolution rles = new RemoveLinkedListElementsSolution();
-		System.out.println(rles.removeElements(n1, 1));
+		printLinkList(rles.removeElements(n1, 1));
 
 	}
 
