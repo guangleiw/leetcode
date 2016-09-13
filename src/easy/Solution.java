@@ -11,6 +11,11 @@ public class Solution {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
+		ListNode n1 = new ListNode(1);
+		n1.next = new ListNode(2);
+		n1.next.next = new ListNode(3);
+		n1.next.next.next = new ListNode(4);
+
 		/**
 		 * System.out.println("--- 字符串反转 ---"); ReverseStrSolution rs = new
 		 * ReverseStrSolution(); System.out.println(rs.reverseString(new String(
@@ -182,13 +187,15 @@ public class Solution {
 		 * System.out.println(llws.lengthOfLastWord(""));
 		 * System.out.println(llws.lengthOfLastWord(" "));
 		 * System.out.println(llws.lengthOfLastWord("string "));
+		 * 
+		 * PalindromLinkedListSolution pls = new PalindromLinkedListSolution();
+		 * ListNode n1 = new ListNode(1); n1.next = new ListNode(2);
+		 * n1.next.next = new ListNode(2); n1.next.next.next = new ListNode(1);
+		 * System.out.println(pls.isPalindrome(n1));
 		 **/
-		PalindromLinkedListSolution pls = new PalindromLinkedListSolution();
-		ListNode n1 = new ListNode(1);
-		n1.next = new ListNode(2);
-		n1.next.next = new ListNode(2);
-		n1.next.next.next = new ListNode(1);
-		System.out.println(pls.isPalindrome(n1));
+
+		RemoveLinkedListElementsSolution rles = new RemoveLinkedListElementsSolution();
+		System.out.println(rles.removeElements(n1, 1));
 
 	}
 
