@@ -15,6 +15,11 @@ public class Solution {
 		n1.next = new ListNode(2);
 		n1.next.next = new ListNode(3);
 		n1.next.next.next = new ListNode(4);
+		
+		ListNode n2 = new ListNode(1);
+		n2.next = new ListNode(1);
+		n2.next.next = new ListNode(1);
+		n2.next.next.next = new ListNode(1);
 
 		/**
 		 * System.out.println("--- 字符串反转 ---"); ReverseStrSolution rs = new
@@ -196,6 +201,7 @@ public class Solution {
 
 		RemoveLinkedListElementsSolution rles = new RemoveLinkedListElementsSolution();
 		printLinkList(rles.removeElements(n1, 1));
+		printLinkList(rles.removeElements(n2, 1));
 
 	}
 
