@@ -14,14 +14,16 @@ public class RemoveLinkedListElementsSolution {
 			}
 		}
 
-		ListNode f = head.next;
+		ListNode f = head;
 		ListNode s = head;
-		if (s.val == val) {
-			s = f;
+		while (f.val == val) {
 			f = f.next;
+			if (f == null)
+				return null;
+			s = f;
 			head = s;
 		}
-
+		f = f.next;
 		while (f != null) {
 			if (f.val == val) {
 				f = f.next;
