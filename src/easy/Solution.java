@@ -197,11 +197,14 @@ public class Solution {
 		 * ListNode n1 = new ListNode(1); n1.next = new ListNode(2);
 		 * n1.next.next = new ListNode(2); n1.next.next.next = new ListNode(1);
 		 * System.out.println(pls.isPalindrome(n1));
-		 **/
+
 
 		RemoveLinkedListElementsSolution rles = new RemoveLinkedListElementsSolution();
-		printLinkList(rles.removeElements(n1, 1));
-		printLinkList(rles.removeElements(n2, 1));
+		System.out.println(rles.getClass().getClassLoader().toString());
+		System.out.println(new Integer(1).getClass().getClassLoader());
+		 **/
+		ReverseBitsSolution rbs  = new ReverseBitsSolution();
+		System.out.println(rbs.reverseBits(43261596 ));
 
 	}
 
