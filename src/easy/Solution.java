@@ -205,6 +205,12 @@ public class Solution {
 		 **/
 		ReverseBitsSolution rbs  = new ReverseBitsSolution();
 		System.out.println(rbs.reverseBits(43261596 ));
+		System.out.println(rbs.reverseBits(65536));
+		System.out.println(rbs.reverseBits(2));
+		
+//		System.out.println(Integer.toBinaryString(-1));
+//		int a = 0xF000;
+//		System.out.println(a);
 
 	}
 
