@@ -211,7 +211,7 @@ public class Solution {
 		System.out.println(Integer.toBinaryString(-1));
 		int a = 0xF000;
 		System.out.println(a);
-		 **/
+		
 		AddBinarySolution abs = new AddBinarySolution();
 		System.out.println(abs.addBinary("0", "0"));	
 		System.out.println(abs.addBinary("1", "0"));
@@ -219,7 +219,10 @@ public class Solution {
 		System.out.println(abs.addBinary("1", "10"));
 		System.out.println(abs.addBinary("0", "10"));
 		System.out.println(abs.addBinary("10100000100100110110010000010101111011011001101110111111111101000000101111001110001111100001101", "110101001011101110001111100110001010100001101011101010000011011011001011101111001100000011011110011"));
-		
+		 **/
+		NthDigitSolution nds = new NthDigitSolution();
+		System.out.println(nds.findNthDigit(150));
+		System.out.println(nds.findNthDigit(11));
 	}
 
 	public static void printArray(int[] arr) {
