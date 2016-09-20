@@ -219,10 +219,14 @@ public class Solution {
 		System.out.println(abs.addBinary("1", "10"));
 		System.out.println(abs.addBinary("0", "10"));
 		System.out.println(abs.addBinary("10100000100100110110010000010101111011011001101110111111111101000000101111001110001111100001101", "110101001011101110001111100110001010100001101011101010000011011011001011101111001100000011011110011"));
-		 **/
+		
 		NthDigitSolution nds = new NthDigitSolution();
 		System.out.println(nds.findNthDigit(150));
 		System.out.println(nds.findNthDigit(11));
+		 **/
+		
+		TwoSumSolution tss = new TwoSumSolution();
+		printArray(tss.twoSum(new int[]{2,7,11,5}, 16));
 	}
 
 	public static void printArray(int[] arr) {
