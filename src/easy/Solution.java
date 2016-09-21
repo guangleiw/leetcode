@@ -232,7 +232,10 @@ public class Solution {
 //		System.out.println(irs.integerReplacement(65535));
 //		System.out.println(irs.integerReplacement(1234));
 //		System.out.println(irs.integerReplacement(3));
-		System.out.println("Replacements : "+irs.integerReplacement(10000));
+//		System.out.println("Replacements : "+irs.integerReplacement(10000));
+//		System.out.println("Replacements : "+irs.integerReplacement(39));
+//		System.out.println("Rep nums: "+irs.integerReplacement(1073741823));
+		System.out.println("Rep nums: "+irs.integerReplacement(2147483647));
 	}
 
 	public static void printArray(int[] arr) {

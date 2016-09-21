@@ -8,18 +8,38 @@ public class IntegerReplaceSolution {
 		while (n != 1) {
 			if (n % 2 == 0) {
 				n = n / 2;
+				sum++;
 			} else {
-//				System.out.println(n);
-				if (((n - 1) & (n - 2)) == 0) {
-					n--;
-				} else if (((n + 1) & n) == 0) {
-					n++;
+				int np = n + 1;
+				int ns = n - 1;
+				sum++;
+				int delta_p = 0;
+				int delta_s = 0;
+
+				if (np <= 0) {
+					return 32;
 				} else {
-					n--;
+					while (np % 2 == 0) {
+						delta_p++;
+						np = np / 2;
+					}
+				}
+
+				while (ns % 2 == 0) {
+					delta_s++;
+					ns = ns / 2;
+					System.out.println(ns);
+				}
+
+				if (np < ns) {
+					sum = sum + delta_p;
+					n = np;
+				} else {
+					sum = sum + delta_s;
+					n = ns;
 				}
 			}
-			System.out.println(n);
-			sum++;
+			
 		}
 		return sum;
 	}
