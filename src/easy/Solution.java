@@ -223,10 +223,13 @@ public class Solution {
 		NthDigitSolution nds = new NthDigitSolution();
 		System.out.println(nds.findNthDigit(150));
 		System.out.println(nds.findNthDigit(11));
-		 **/
+		
 		
 		TwoSumSolution tss = new TwoSumSolution();
 		printArray(tss.twoSum(new int[]{2,7,11,5}, 16));
+		 **/
+		IntegerReplaceSolution irs = new IntegerReplaceSolution();
+		System.out.println(irs.integerReplacement(65535));
 	}
 
 	public static void printArray(int[] arr) {
