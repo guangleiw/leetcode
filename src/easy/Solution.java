@@ -229,12 +229,12 @@ public class Solution {
 		printArray(tss.twoSum(new int[]{2,7,11,5}, 16));
 		 **/
 		IntegerReplaceSolution irs = new IntegerReplaceSolution();
-//		System.out.println(irs.integerReplacement(65535));
-//		System.out.println(irs.integerReplacement(1234));
-//		System.out.println(irs.integerReplacement(3));
-//		System.out.println("Replacements : "+irs.integerReplacement(10000));
-//		System.out.println("Replacements : "+irs.integerReplacement(39));
-//		System.out.println("Rep nums: "+irs.integerReplacement(1073741823));
+		System.out.println(irs.integerReplacement(65535));
+		System.out.println(irs.integerReplacement(1234));
+		System.out.println(irs.integerReplacement(3));
+		System.out.println("Replacements : "+irs.integerReplacement(10000));
+		System.out.println("Replacements : "+irs.integerReplacement(39));
+		System.out.println("Rep nums: "+irs.integerReplacement(1073741823));
 		System.out.println("Rep nums: "+irs.integerReplacement(2147483647));
 	}
 

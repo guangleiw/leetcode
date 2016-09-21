@@ -4,6 +4,9 @@ public class IntegerReplaceSolution {
 	public int integerReplacement(int n) {
 		if (1 == n)
 			return 0;
+		if (n + 1 <= 0) {
+			return 32;
+		}
 		int sum = 0;
 		while (n != 1) {
 			if (n % 2 == 0) {
@@ -16,19 +19,14 @@ public class IntegerReplaceSolution {
 				int delta_p = 0;
 				int delta_s = 0;
 
-				if (np <= 0) {
-					return 32;
-				} else {
-					while (np % 2 == 0) {
-						delta_p++;
-						np = np / 2;
-					}
+				while (np % 2 == 0) {
+					delta_p++;
+					np = np / 2;
 				}
 
 				while (ns % 2 == 0) {
 					delta_s++;
 					ns = ns / 2;
-					System.out.println(ns);
 				}
 
 				if (np < ns) {
@@ -39,7 +37,7 @@ public class IntegerReplaceSolution {
 					n = ns;
 				}
 			}
-			
+
 		}
 		return sum;
 	}
