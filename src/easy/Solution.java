@@ -1,11 +1,10 @@
 package easy;
 
 import java.util.Arrays;
-import java.util.Date;
-import java.util.LinkedList;
 import java.util.List;
 
 import utils.ListNode;
+import utils.TreeNode;
 
 public class Solution {
 
@@ -227,7 +226,7 @@ public class Solution {
 		
 		TwoSumSolution tss = new TwoSumSolution();
 		printArray(tss.twoSum(new int[]{2,7,11,5}, 16));
-		 **/
+		
 		IntegerReplaceSolution irs = new IntegerReplaceSolution();
 		System.out.println(irs.integerReplacement(65535));
 		System.out.println(irs.integerReplacement(1234));
@@ -236,6 +235,10 @@ public class Solution {
 		System.out.println("Replacements : "+irs.integerReplacement(39));
 		System.out.println("Rep nums: "+irs.integerReplacement(1073741823));
 		System.out.println("Rep nums: "+irs.integerReplacement(2147483647));
+		 **/
+		PathSumThree pst = new PathSumThree();
+		TreeNode root = new TreeNode(8);
+		pst.pathSum(root, 8);
 	}
 
 	public static void printArray(int[] arr) {
