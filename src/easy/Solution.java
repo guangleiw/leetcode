@@ -4,7 +4,6 @@ import java.util.Arrays;
 import java.util.List;
 
 import utils.ListNode;
-import utils.TreeNode;
 
 public class Solution {
 
@@ -236,9 +235,17 @@ public class Solution {
 		System.out.println("Rep nums: "+irs.integerReplacement(1073741823));
 		System.out.println("Rep nums: "+irs.integerReplacement(2147483647));
 		 **/
-		PathSumThree pst = new PathSumThree();
-		TreeNode root = new TreeNode(8);
-		pst.pathSum(root, 8);
+//		PathSumThree pst = new PathSumThree();
+//		//[10,5,-3,3,2,null,11,3,-2,null,1]
+//		TreeNode root = new TreeNode(8);
+////		System.out.println(pst.pathSum(root, 8));
+		
+		FindAnagramsInString fais = new FindAnagramsInString();
+		List<Integer> res = fais.findAnagrams("cbaebabacd", "abc");
+		out(res);
+//		System.out.println(Max);
+//		char[] arr = new char[Integer.MAX_VALUE-1];
+//		System.out.println(arr.length);		
 	}
 
 	public static void printArray(int[] arr) {
