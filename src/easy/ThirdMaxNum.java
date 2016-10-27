@@ -26,6 +26,5 @@ public class ThirdMaxNum extends PrintTool {
 			}
 		}
 		return hasThirdMax ? thirdMax : max;
-
 	}
 }
