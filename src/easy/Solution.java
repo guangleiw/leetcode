@@ -3,23 +3,39 @@ package easy;
 import java.util.Arrays;
 import java.util.List;
 
+import common.PrintTool;
 import utils.ListNode;
 
-public class Solution {
+public class Solution extends PrintTool {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		ListNode n1 = new ListNode(1);
-		n1.next = new ListNode(2);
-		n1.next.next = new ListNode(3);
-		n1.next.next.next = new ListNode(4);
-		
-		ListNode n2 = new ListNode(1);
-		n2.next = new ListNode(1);
-		n2.next.next = new ListNode(1);
-		n2.next.next.next = new ListNode(1);
 
+		ThirdMaxNum tmn = new ThirdMaxNum();
+
+//		System.out.println(tmn.thirdMax(new int[] { 1, 2, 3 }));
+//		 System.out.println(tmn.thirdMax(new int[]{1,2,3,4,5}));
+		 System.out.println(tmn.thirdMax(new int[]{1,2}));
+		 System.out.println(tmn.thirdMax(new int[]{1}));
+		 System.out.println(tmn.thirdMax(new int[]{2,2,3}));
+		 System.out.println(tmn.thirdMax(new int[]{1,1,1}));
+		 System.out.println(tmn.thirdMax(new int[]{1,2,1,1}));
+		 System.out.println(tmn.thirdMax(new int[]{-2147483648,1,1}));
+		 System.out.println(tmn.thirdMax(new int[]{-2147483648,2,1}));
+		 
+//		 int a = -2147483648;
+//		 System.out.println(a);
+		 
+		 
+		 
 		/**
+		 * ListNode n1 = new ListNode(1); n1.next = new ListNode(2);
+		 * n1.next.next = new ListNode(3); n1.next.next.next = new ListNode(4);
+		 * 
+		 * ListNode n2 = new ListNode(1); n2.next = new ListNode(1);
+		 * n2.next.next = new ListNode(1); n2.next.next.next = new ListNode(1);
+		 * 
+		 * 
 		 * System.out.println("--- 字符串反转 ---"); ReverseStrSolution rs = new
 		 * ReverseStrSolution(); System.out.println(rs.reverseString(new String(
 		 * "This is a good example for reseving String in JAVA")));
@@ -195,81 +211,52 @@ public class Solution {
 		 * ListNode n1 = new ListNode(1); n1.next = new ListNode(2);
 		 * n1.next.next = new ListNode(2); n1.next.next.next = new ListNode(1);
 		 * System.out.println(pls.isPalindrome(n1));
-
-
-		RemoveLinkedListElementsSolution rles = new RemoveLinkedListElementsSolution();
-		System.out.println(rles.getClass().getClassLoader().toString());
-		System.out.println(new Integer(1).getClass().getClassLoader());
-		
-		ReverseBitsSolution rbs  = new ReverseBitsSolution();
-		System.out.println(rbs.reverseBits(43261596 ));
-		System.out.println(rbs.reverseBits(65536));
-		System.out.println(rbs.reverseBits(2));
-		
-		System.out.println(Integer.toBinaryString(-1));
-		int a = 0xF000;
-		System.out.println(a);
-		
-		AddBinarySolution abs = new AddBinarySolution();
-		System.out.println(abs.addBinary("0", "0"));	
-		System.out.println(abs.addBinary("1", "0"));
-		System.out.println(abs.addBinary("1", "1"));
-		System.out.println(abs.addBinary("1", "10"));
-		System.out.println(abs.addBinary("0", "10"));
-		System.out.println(abs.addBinary("10100000100100110110010000010101111011011001101110111111111101000000101111001110001111100001101", "110101001011101110001111100110001010100001101011101010000011011011001011101111001100000011011110011"));
-		
-		NthDigitSolution nds = new NthDigitSolution();
-		System.out.println(nds.findNthDigit(150));
-		System.out.println(nds.findNthDigit(11));
-		
-		
-		TwoSumSolution tss = new TwoSumSolution();
-		printArray(tss.twoSum(new int[]{2,7,11,5}, 16));
-		
-		IntegerReplaceSolution irs = new IntegerReplaceSolution();
-		System.out.println(irs.integerReplacement(65535));
-		System.out.println(irs.integerReplacement(1234));
-		System.out.println(irs.integerReplacement(3));
-		System.out.println("Replacements : "+irs.integerReplacement(10000));
-		System.out.println("Replacements : "+irs.integerReplacement(39));
-		System.out.println("Rep nums: "+irs.integerReplacement(1073741823));
-		System.out.println("Rep nums: "+irs.integerReplacement(2147483647));
+		 * 
+		 * 
+		 * RemoveLinkedListElementsSolution rles = new
+		 * RemoveLinkedListElementsSolution();
+		 * System.out.println(rles.getClass().getClassLoader().toString());
+		 * System.out.println(new Integer(1).getClass().getClassLoader());
+		 * 
+		 * ReverseBitsSolution rbs = new ReverseBitsSolution();
+		 * System.out.println(rbs.reverseBits(43261596 ));
+		 * System.out.println(rbs.reverseBits(65536));
+		 * System.out.println(rbs.reverseBits(2));
+		 * 
+		 * System.out.println(Integer.toBinaryString(-1)); int a = 0xF000;
+		 * System.out.println(a);
+		 * 
+		 * AddBinarySolution abs = new AddBinarySolution();
+		 * System.out.println(abs.addBinary("0", "0"));
+		 * System.out.println(abs.addBinary("1", "0"));
+		 * System.out.println(abs.addBinary("1", "1"));
+		 * System.out.println(abs.addBinary("1", "10"));
+		 * System.out.println(abs.addBinary("0", "10"));
+		 * System.out.println(abs.addBinary(
+		 * "10100000100100110110010000010101111011011001101110111111111101000000101111001110001111100001101",
+		 * "110101001011101110001111100110001010100001101011101010000011011011001011101111001100000011011110011"
+		 * ));
+		 * 
+		 * NthDigitSolution nds = new NthDigitSolution();
+		 * System.out.println(nds.findNthDigit(150));
+		 * System.out.println(nds.findNthDigit(11));
+		 * 
+		 * 
+		 * TwoSumSolution tss = new TwoSumSolution(); printArray(tss.twoSum(new
+		 * int[]{2,7,11,5}, 16));
+		 * 
+		 * IntegerReplaceSolution irs = new IntegerReplaceSolution();
+		 * System.out.println(irs.integerReplacement(65535));
+		 * System.out.println(irs.integerReplacement(1234));
+		 * System.out.println(irs.integerReplacement(3)); System.out.println(
+		 * "Replacements : "+irs.integerReplacement(10000)); System.out.println(
+		 * "Replacements : "+irs.integerReplacement(39)); System.out.println(
+		 * "Rep nums: "+irs.integerReplacement(1073741823)); System.out.println(
+		 * "Rep nums: "+irs.integerReplacement(2147483647));
+		 * 
+		 * 
+		 * FindAnagramsInString fais = new FindAnagramsInString(); List
+		 * <Integer> res = fais.findAnagrams("cbaebabacd", "abc");
 		 **/
-//		PathSumThree pst = new PathSumThree();
-//		//[10,5,-3,3,2,null,11,3,-2,null,1]
-//		TreeNode root = new TreeNode(8);
-////		System.out.println(pst.pathSum(root, 8));
-		
-		FindAnagramsInString fais = new FindAnagramsInString();
-		List<Integer> res = fais.findAnagrams("cbaebabacd", "abc");
-		out(res);
-//		System.out.println(Max);
-//		char[] arr = new char[Integer.MAX_VALUE-1];
-//		System.out.println(arr.length);		
 	}
-
-	public static void printArray(int[] arr) {
-		System.out.println(Arrays.toString(arr));
-	}
-
-	public static void printLinkList(ListNode head) {
-		int length = 0;
-		while (head != null) {
-			System.out.print(head.val + " ");
-			length++;
-			head = head.next;
-			// break;
-		}
-
-		System.out.println("//Length of the linked list :" + length);
-	}
-
-	public static <T> void out(List<T> args) {
-		System.out.println("This is output of out :");
-		for (int i = 0; i < args.size(); i++) {
-			System.out.print(args.get(i) + " ");
-		}
-		System.out.println("");
-	}
-
 }
