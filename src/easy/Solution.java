@@ -10,25 +10,31 @@ public class Solution extends PrintTool {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-
-		ThirdMaxNum tmn = new ThirdMaxNum();
-
-//		System.out.println(tmn.thirdMax(new int[] { 1, 2, 3 }));
-//		 System.out.println(tmn.thirdMax(new int[]{1,2,3,4,5}));
-		 System.out.println(tmn.thirdMax(new int[]{1,2}));
-		 System.out.println(tmn.thirdMax(new int[]{1}));
-		 System.out.println(tmn.thirdMax(new int[]{2,2,3}));
-		 System.out.println(tmn.thirdMax(new int[]{1,1,1}));
-		 System.out.println(tmn.thirdMax(new int[]{1,2,1,1}));
-		 System.out.println(tmn.thirdMax(new int[]{-2147483648,1,1}));
-		 System.out.println(tmn.thirdMax(new int[]{-2147483648,2,1}));
-		 
-//		 int a = -2147483648;
-//		 System.out.println(a);
-		 
-		 
-		 
+		
+		StrImplementation si = new StrImplementation();
+		System.out.println(si.strStr("123456789", "12"));;
+//		System.out.println(si.strStr("123456789", "89"));;
+		System.out.println(si.strStr("89", "1289"));;
+		System.out.println(si.strStr("", ""));;
+//		si.strStr("abcdefghijklmn", "ab");
+//		si.strStr("abcdefghijklmn", "ab");
+//		si.strStr("abcdefghijklmn", "ab");
+		
+		
 		/**
+		 * ThirdMaxNum tmn = new ThirdMaxNum();
+		 * 
+		 * System.out.println(tmn.thirdMax(new int[] { 1, 2, 3 }));
+		 * System.out.println(tmn.thirdMax(new int[] { 1, 2, 3, 4, 5 }));
+		 * System.out.println(tmn.thirdMax(new int[] { 1, 2 }));
+		 * System.out.println(tmn.thirdMax(new int[] { 1 }));
+		 * System.out.println(tmn.thirdMax(new int[] { 2, 2, 3 }));
+		 * System.out.println(tmn.thirdMax(new int[] { 1, 1, 1 }));
+		 * System.out.println(tmn.thirdMax(new int[] { 1, 2, 1, 1 }));
+		 * System.out.println(tmn.thirdMax(new int[] { -2147483648, 1, 1 }));
+		 * System.out.println(tmn.thirdMax(new int[] { -2147483648, 2, 1 }));
+		 * 
+		 * 
 		 * ListNode n1 = new ListNode(1); n1.next = new ListNode(2);
 		 * n1.next.next = new ListNode(3); n1.next.next.next = new ListNode(4);
 		 * 
