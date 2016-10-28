@@ -1,16 +1,18 @@
 package easy;
 
-import java.util.Arrays;
-import java.util.List;
-
 import common.PrintTool;
-import utils.ListNode;
 
 public class Solution extends PrintTool {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		
+		int[] nums = new int[]{-2,0,3,-5,2,-1};
+		NumArray na = new NumArray(nums);
+		System.out.println(na.sumRange(0, 2));;
+		
+		
+		/**
 		StrImplementation si = new StrImplementation();
 		System.out.println(si.strStr("123456789", "12"));;
 //		System.out.println(si.strStr("123456789", "89"));;
@@ -21,7 +23,7 @@ public class Solution extends PrintTool {
 //		si.strStr("abcdefghijklmn", "ab");
 		
 		
-		/**
+		
 		 * ThirdMaxNum tmn = new ThirdMaxNum();
 		 * 
 		 * System.out.println(tmn.thirdMax(new int[] { 1, 2, 3 }));
