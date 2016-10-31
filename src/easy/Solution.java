@@ -7,12 +7,14 @@ public class Solution extends PrintTool {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		
+		CountPrimesSolution cps = new CountPrimesSolution();
+		System.out.println(cps.countPrimes(25));;
+		System.out.println(cps.countPrimes(2));;
+		
+		/**
 		int[] nums = new int[]{-2,0,3,-5,2,-1};
 		NumArray na = new NumArray(nums);
 		System.out.println(na.sumRange(0, 2));;
-		
-		
-		/**
 		StrImplementation si = new StrImplementation();
 		System.out.println(si.strStr("123456789", "12"));;
 //		System.out.println(si.strStr("123456789", "89"));;
