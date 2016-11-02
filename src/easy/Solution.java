@@ -1,5 +1,8 @@
 package easy;
 
+import java.util.ArrayList;
+import java.util.List;
+
 import common.PrintTool;
 
 public class Solution extends PrintTool {
@@ -7,11 +10,15 @@ public class Solution extends PrintTool {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		
-		CountPrimesSolution cps = new CountPrimesSolution();
-		System.out.println(cps.countPrimes(25));;
-		System.out.println(cps.countPrimes(2));;
+		ZigzagSolution zs = new ZigzagSolution();
+		System.out.println(zs.convert("PAYPALISHIRING", 3));
+		System.out.println(zs.convert("A", 3));	
 		
 		/**
+		CountPrimesSolution cps = new CountPrimesSolution();
+		System.out.println(cps.countPrimes(25));;
+		System.out.println(cps.countPrimes(2));;		
+		
 		int[] nums = new int[]{-2,0,3,-5,2,-1};
 		NumArray na = new NumArray(nums);
 		System.out.println(na.sumRange(0, 2));;
