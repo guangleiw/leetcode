@@ -1,38 +1,50 @@
 package easy;
 
-import java.util.ArrayList;
-import java.util.List;
-
 import common.PrintTool;
 
 public class Solution extends PrintTool {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
+
+		// Your MinStack object will be instantiated and called as such:
+		MinStack obj = new MinStack();
+		obj.push(2);
+		obj.push(1);
+		obj.push(2);
+		obj.pop();
+//		obj.pop();
+//		obj.push(3);
+//		obj.push(5);
+//		obj.push(6);
+//		obj.push(2);
 		
-		ZigzagSolution zs = new ZigzagSolution();
-		System.out.println(zs.convert("PAYPALISHIRING", 3));
-		System.out.println(zs.convert("A", 3));	
-		
+//		obj.pop();
+		System.out.println(obj.top());
+		System.out.println(obj.getMin());;
+
 		/**
-		CountPrimesSolution cps = new CountPrimesSolution();
-		System.out.println(cps.countPrimes(25));;
-		System.out.println(cps.countPrimes(2));;		
-		
-		int[] nums = new int[]{-2,0,3,-5,2,-1};
-		NumArray na = new NumArray(nums);
-		System.out.println(na.sumRange(0, 2));;
-		StrImplementation si = new StrImplementation();
-		System.out.println(si.strStr("123456789", "12"));;
-//		System.out.println(si.strStr("123456789", "89"));;
-		System.out.println(si.strStr("89", "1289"));;
-		System.out.println(si.strStr("", ""));;
-//		si.strStr("abcdefghijklmn", "ab");
-//		si.strStr("abcdefghijklmn", "ab");
-//		si.strStr("abcdefghijklmn", "ab");
-		
-		
-		
+		 * ZigzagSolution zs = new ZigzagSolution();
+		 * System.out.println(zs.convert("PAYPALISHIRING", 3));
+		 * System.out.println(zs.convert("A", 3));
+		 * 
+		 * 
+		 * CountPrimesSolution cps = new CountPrimesSolution();
+		 * System.out.println(cps.countPrimes(25));;
+		 * System.out.println(cps.countPrimes(2));;
+		 * 
+		 * int[] nums = new int[]{-2,0,3,-5,2,-1}; NumArray na = new
+		 * NumArray(nums); System.out.println(na.sumRange(0, 2));;
+		 * StrImplementation si = new StrImplementation();
+		 * System.out.println(si.strStr("123456789", "12"));; //
+		 * System.out.println(si.strStr("123456789", "89"));;
+		 * System.out.println(si.strStr("89", "1289"));;
+		 * System.out.println(si.strStr("", ""));; //
+		 * si.strStr("abcdefghijklmn", "ab"); // si.strStr("abcdefghijklmn",
+		 * "ab"); // si.strStr("abcdefghijklmn", "ab");
+		 * 
+		 * 
+		 * 
 		 * ThirdMaxNum tmn = new ThirdMaxNum();
 		 * 
 		 * System.out.println(tmn.thirdMax(new int[] { 1, 2, 3 }));
