@@ -7,23 +7,19 @@ public class Solution extends PrintTool {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 
-		// Your MinStack object will be instantiated and called as such:
-		MinStack obj = new MinStack();
-		obj.push(2);
-		obj.push(1);
-		obj.push(2);
-		obj.pop();
-//		obj.pop();
-//		obj.push(3);
-//		obj.push(5);
-//		obj.push(6);
-//		obj.push(2);
+		ValidPalindromeSolution vps = new ValidPalindromeSolution();
+//		System.out.println(vps.isPalindrome("A man, a plan, a canal: Panama"));
+		System.out.println(vps.isPalindrome("0P"));
 		
-//		obj.pop();
-		System.out.println(obj.top());
-		System.out.println(obj.getMin());;
-
 		/**
+		 * MinStack obj = new MinStack(); obj.push(2); obj.push(1); obj.push(2);
+		 * obj.pop(); obj.pop(); obj.push(3); obj.push(5); obj.push(6);
+		 * obj.push(2);
+		 * 
+		 * obj.pop(); System.out.println(obj.top());
+		 * System.out.println(obj.getMin());;
+		 * 
+		 * 
 		 * ZigzagSolution zs = new ZigzagSolution();
 		 * System.out.println(zs.convert("PAYPALISHIRING", 3));
 		 * System.out.println(zs.convert("A", 3));
