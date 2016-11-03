@@ -6,12 +6,19 @@ public class Solution extends PrintTool {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
+		
+		System.out.println(Integer.MAX_VALUE);
 
+		
+		FirstBadVersionSolution fbvs = new FirstBadVersionSolution();
+		System.out.println(fbvs.firstBadVersion(2126753390));;
+		
+		/**
 		ValidPalindromeSolution vps = new ValidPalindromeSolution();
 //		System.out.println(vps.isPalindrome("A man, a plan, a canal: Panama"));
 		System.out.println(vps.isPalindrome("0P"));
 		
-		/**
+		
 		 * MinStack obj = new MinStack(); obj.push(2); obj.push(1); obj.push(2);
 		 * obj.pop(); obj.pop(); obj.push(3); obj.push(5); obj.push(6);
 		 * obj.push(2);
